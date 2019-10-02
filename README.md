@@ -13,4 +13,5 @@ Below are the parameters:
 1) Learning rate = 0.0001
 2) Optimizer = Adam
 3) Activation = Softmax
-4)fine_tune_at = 145 ( out of 155 layers)
+4) fine_tune_at = 145(out of 155 layers)
+
