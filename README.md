@@ -17,7 +17,7 @@ Below are the parameters:
 
 Due to Github's file size limitation, the parameter h5 file and the dataset are not included in this repo. To test the Flask app yourself:
 
-* Download the h5 file ![Here]https://drive.google.com/open?id=1v-lBpP1n28lwL3986pSp0NbJRt8QzSC-
+* Download the h5 file [Here!](https://drive.google.com/open?id=1v-lBpP1n28lwL3986pSp0NbJRt8QzSC-)
 * Save the h5 file to static folder
 * In your terminal, navigate to this folder then type python main.py
 
