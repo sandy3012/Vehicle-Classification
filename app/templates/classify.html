@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html class="full-height" lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fantastic 5</title>
+    <meta name="description" content="Material design landing page template built by TemplateFlip.com"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="static/css/mdb.min.css" rel="stylesheet">
+    <link href="static/css/main.css" rel="stylesheet">
+    <link href="static/css/style.css" rel="stylesheet">
+	
+  </head>
+  <body id="top">
+    <header>
+      <!-- Navbar-->
+      <!-- <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar" id="navbar">
+        <div class="container"><a class="navbar-brand" href="#"><strong>Fantastic 5</strong></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+          <div class="collapse navbar-collapse" id="navbarContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item"><a class="nav-link active" href="">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="#projects">Project</a></li>
+              <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
+			</ul>
+
+          </div>
+        </div>
+      </nav> -->
+      <!-- Intro Section-->
+      <section class="view hm-gradient" id="intro">
+        <div class="full-bg-img d-flex align-items-center">
+          <div class="container">
+            <div class="row no-gutters">
+              <div class="col-md-10 col-lg-6 text-center text-md-left margins">
+                <div class="white-text">
+                  <div class="wow fadeInLeft" data-wow-delay="0.3s">
+                    <h1 class="h1-responsive font-bold mt-sm-5">Classification of Vehicles using TensorFlow 2.0.</h1>
+                    <div class="h6">
+                      This project will help you to identify cateogry of vehicles: Air, Water, Amphibious & Road
+                    </div>
+                  </div><br>
+				  
+                  <div class="wow fadeInLeft" data-wow-delay="0.3s">
+					
+					<a class="btn btn-white dark-grey-text font-bold ml-0" href="#projects" target="_blank"><i class="fa fa-play mr-1"></i> View Project</a>
+
+					</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </section>
+    </header>
+    <div id="content">
+
+<section class="py-5" id="projects">
+  <div class="container">
+    <div class="wow fadeIn">
+      <h2 class="text-center h1 my-4" style="padding-top:55px;padding-bottom:15px">Vehicle Classification Project</h2>
+          <!-- <p class="px-5 mb-5 pb-3 lead blue-grey-text text-center">
+        <!-- How to use our app: hold the fruit so camera on the screen can capture it as a whole. Then "Take a picture" and "Predict". -->
+      </p> --> -->
+    </div>
+    <div class="row wow fadeInLeft" data-wow-delay=".3s">
+      <div class="col-lg-6 col-xl-5 pr-lg-5 pb-5">
+		<div class="booth">
+            <a href="/">Back to Home</a>
+
+            <div class="results">
+                <h2>This is: {{ label }}</h2>
+                <h3>Confidence: {{prob}}%</h3>
+            </div>
+    </div>
+    
+    <img src="{{ url_for('classify.send_file', filename=image_file_name)}}"/>
+	  </div>
+      <div class="col-lg-6 col-xl-7 pl-lg-5 pb-4">
+        <div class="row mb-3">
+
+          <!-- <div class="col-10">
+            <span class="booth-capture-button">YOUR IMAGE WILL SHOW HERE</span>
+          </div> -->
+        </div>
+        <div class="row mb-3">
+          <div class="col-10">
+           
+              <div class="booth">
+                <canvas id="canvas" width="480px" height="300px"></canvas>
+              </div>
+                  
+          </div>
+          <h4 id="result"></h4>
+          
+        </div>
+        <div class="row">
+          <div class="col-10">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section class="py-5">
+      <div class="container">
+        <div class="wow fadeIn">
+          <h2 style="color: red">Please Specify the Correct Category, if the Model misclassifies.</h2>
+        </div>
+            <input class="btn btn-primary" type="button" id="myButton" value="Road Vehicle" onclick="loading()"/> 
+            <input class="btn btn-primary" type="button" id="myButton" value="Water Vehicle" onclick="loading()"/>
+            <input class="btn btn-primary" type="button" id="myButton" value="Amphibious Vehicle" onclick="loading()"/>
+            <input class="btn btn-primary" type="button" id="myButton" value="Air Vehicle" onclick="loading()"/>
+        <div class="wow fadeIn">
+
+        </div>
+
+      </div>
+  </section>
+</section>
+
+
+</div>
+    <!-- <footer class="page-footer indigo darken-2 center-on-small-only pt-0 mt-0">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="mb-5 flex-center"><a class="px-3"><i class="fa fa-facebook fa-lg white-text"></i></a><a class="px-3"><i class="fa fa-twitter fa-lg white-text"></i></a><a class="px-3"><i class="fa fa-google-plus fa-lg white-text"></i></a><a class="px-3"><i class="fa fa-linkedin fa-lg white-text"></i></a></div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container-fluid">
+          <p>&copy; <a href="/">Fantastic 5</a> - Design: <a href="https://templateflip.com/" target="_blank">TemplateFlip</a></p>
+        </div>
+      </div>
+    </footer> -->
+    <script type="text/javascript" src="../static/js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="../static/js/popper.min.js"></script>
+    <script type="text/javascript" src="../static/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../static/js/mdb.min.js"></script>
+	
+	<!-- edit part -->
+    <script src="../static/js/jquery-3.4.1.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,42 @@
+.booth {
+    width:420px;
+    /* background-color: grey; */
+    /* border-image:   linear-gradient(to right, grey 25%, yellow 25%, yellow 50%,red 50%, red 75%, teal 75%) 5; */
+    /* border:10px outset whitesmoke; */
+    /* background: linear-gradient(45deg, rgba(42, 27, 161, 0.7), rgba(29, 210, 177, 0.7) 100%); */
+    margin:0 auto;
+    text-align: center
+}
+
+.booth-capture-button {
+    display:block;
+    margin:10px 0;
+    padding:10px 20px;
+    background-color: cornflowerblue;
+    color: #fff;
+    text-align: center;
+}
+
+span .booth-capture-button {
+   width: 500px
+}
+
+#video {
+    margin-top: 15px;
+    width: 450px;
+    height: 300px;
+  }
+
+.predict-button {
+    text-align: center;
+    padding-top: 12px;
+    padding-bottom: 10px;
+}
+
+#result {
+    width: 500px;
+    color: blue;
+    padding-top: 12px;
+    padding-bottom: 10px;
+    text-align: center;
+}
