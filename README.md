@@ -15,3 +15,4 @@ Below are the parameters:
 3) Activation = Softmax
 4) fine_tune_at = 145(out of 155 layers)
 
+![](https://i.imgur.com/wwsBKmJ.png)
